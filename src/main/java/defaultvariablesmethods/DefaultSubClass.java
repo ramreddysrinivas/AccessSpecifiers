@@ -3,7 +3,11 @@ package defaultvariablesmethods;
 public class DefaultSubClass extends DefaultSuperClass {
 	
 	 void m1(){
-		super.a=30;//default variable is   accessible with out creating object because of inheritance
+		/* DefaultSuperClass d = new DefaultSuperClass();
+		 d.a=20;
+		*///accessing default variables with object name  in subclass is optional.
+		 //because of inheritance , default variables already available.
+		 super.a=30;//default variable is   accessible with out creating object because of inheritance
 			s="s1";
 		System.out.println("subclassm1");
 	}
